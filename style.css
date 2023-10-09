@@ -1,3 +1,8 @@
+:root {
+    --green-color: #596D48;
+    --light-gray: #E5E7EB;
+}
+
 * {
     font-family: 'Chivo', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -50,7 +55,7 @@
 /* Rightside */
 
 .rightside {
-    background-color: #E5E7EB;
+    background-color:var(--light-gray);
     width: 65%;
     height: 100%;
     display: flex;
@@ -79,7 +84,7 @@ li {
 input {
     max-width: 150px;
     border-radius: 3px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--light-gray);
 }
 
 .form {
@@ -114,12 +119,12 @@ label {
 /* Button */
 
 button {
-    background-color: #596D48 ;
+    background-color: var(--green-color);
     margin: 10px 30px;
     padding: 10px 25px;
     color: white;
     font-weight: bold;
-    border: 0px solid #E5E7EB;
+    border: 0px solid var(--light-gray);
     border-radius: 6px;
     box-shadow: 3px 3px 5px 0px grey;
 }
@@ -133,6 +138,11 @@ footer {
 
 footer>a {
     text-decoration: none;
-    color: #596D48;
+    color: var(--green-color);
     font-weight: bold;
+}
+
+input:focus {
+    appearance: none;
+    border: 1px solid red;
 }
